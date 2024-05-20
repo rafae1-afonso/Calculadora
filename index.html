@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Calculadora_</h1>
+    </header>
+    <main>
+        <section class="calculadora">
+            <div class="calculadora__tela"></div>
+            <section class="calculadora__botoes">
+                <button onclick="deleteFunction(true)" class="botao botoes-AC">AC</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-div">/</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-multi">*</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-minus">-</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-plus">+</button>
+                <button onclick="showResult()" class="botao botoes-result">=</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-7">7</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-8">8</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-9">9</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-4">4</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-5">5</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-6">6</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-1">1</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-2">2</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-3">3</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-0">0</button>
+                <button onclick="putCharacter(this.innerHTML)" class="botao botoes-dot">.</button>
+                <button onclick="deleteFunction()" class="botao botoes-delete">X</button>
+            </section>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por <a href="">Rafael Afonso</a></p>
+        <p class="versao">v1.0</p>
+    </footer>
+</body>
+<script src="scripts/calculator.js"></script>
+</html>
